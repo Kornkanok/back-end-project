@@ -30,12 +30,12 @@
             [
                 'options' => ['class' => 'sidebar-menu'],
                 'items' => [
-                    ['label' => 'จัดการฐานข้อมูล', 'options' => ['class' => 'header']],
+                    ['label' => 'จัดการฐานข้อมูลข้น', 'options' => ['class' => 'header']],
                     //ตรางจาก db
                     ['label' => 'Bus', 'url' => ['/bus'],],
                     ['label' => 'Descriptions', 'url' => ['/descriptions'],],
                     ['label' => 'Description Van', 'url' => ['/descriptionvan'],],
-                    ['label' => 'ProvinceTH', 'url' => ['/province'],],
+                    // ['label' => 'ProvinceTH', 'url' => ['/province'],],
                     ['label' => 'Station', 'url' => ['/station'],],
                     ['label' => 'Vans', 'url' => ['/van'],],
 
