@@ -30,12 +30,12 @@
             [
                 'options' => ['class' => 'sidebar-menu'],
                 'items' => [
-                    ['label' => 'Menu Yii2', 'options' => ['class' => 'header']],
+                    ['label' => 'จัดการฐานข้อมูล', 'options' => ['class' => 'header']],
                     //ตรางจาก db
                     ['label' => 'Bus', 'url' => ['/bus'],],
                     ['label' => 'Descriptions', 'url' => ['/descriptions'],],
                     ['label' => 'Description Van', 'url' => ['/descriptionvan'],],
-                    ['label' => 'ProvinceTH', 'url' => ['/provinceTh'],],
+                    ['label' => 'ProvinceTH', 'url' => ['/province'],],
                     ['label' => 'Station', 'url' => ['/station'],],
                     ['label' => 'Vans', 'url' => ['/van'],],
 

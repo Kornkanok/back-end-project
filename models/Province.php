@@ -12,7 +12,7 @@ use Yii;
  * @property string $province_lat
  * @property string $province_lon
  */
-class ProvinceTh extends \yii\db\ActiveRecord
+class Province extends \yii\db\ActiveRecord
 {
     /**
      * @inheritdoc

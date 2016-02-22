@@ -3,16 +3,16 @@
 namespace app\controllers;
 
 use Yii;
-use app\models\ProvinceTh;
-use app\models\ProvinceThSearch;
+use app\models\Province;
+use app\models\ProvinceSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
 /**
- * ProvinceThController implements the CRUD actions for ProvinceTh model.
+ * ProvinceController implements the CRUD actions for Province model.
  */
-class ProvinceThController extends Controller
+class ProvinceController extends Controller
 {
     public function behaviors()
     {
@@ -27,12 +27,12 @@ class ProvinceThController extends Controller
     }
 
     /**
-     * Lists all ProvinceTh models.
+     * Lists all Province models.
      * @return mixed
      */
     public function actionIndex()
     {
-        $searchModel = new ProvinceThSearch();
+        $searchModel = new ProvinceSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
         return $this->render('index', [
@@ -42,7 +42,7 @@ class ProvinceThController extends Controller
     }
 
     /**
-     * Displays a single ProvinceTh model.
+     * Displays a single Province model.
      * @param integer $id
      * @return mixed
      */
@@ -54,13 +54,13 @@ class ProvinceThController extends Controller
     }
 
     /**
-     * Creates a new ProvinceTh model.
+     * Creates a new Province model.
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
      */
     public function actionCreate()
     {
-        $model = new ProvinceTh();
+        $model = new Province();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->province_id]);
@@ -72,7 +72,7 @@ class ProvinceThController extends Controller
     }
 
     /**
-     * Updates an existing ProvinceTh model.
+     * Updates an existing Province model.
      * If update is successful, the browser will be redirected to the 'view' page.
      * @param integer $id
      * @return mixed
@@ -91,7 +91,7 @@ class ProvinceThController extends Controller
     }
 
     /**
-     * Deletes an existing ProvinceTh model.
+     * Deletes an existing Province model.
      * If deletion is successful, the browser will be redirected to the 'index' page.
      * @param integer $id
      * @return mixed
@@ -104,15 +104,15 @@ class ProvinceThController extends Controller
     }
 
     /**
-     * Finds the ProvinceTh model based on its primary key value.
+     * Finds the Province model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.
      * @param integer $id
-     * @return ProvinceTh the loaded model
+     * @return Province the loaded model
      * @throws NotFoundHttpException if the model cannot be found
      */
     protected function findModel($id)
     {
-        if (($model = ProvinceTh::findOne($id)) !== null) {
+        if (($model = Province::findOne($id)) !== null) {
             return $model;
         } else {
             throw new NotFoundHttpException('The requested page does not exist.');

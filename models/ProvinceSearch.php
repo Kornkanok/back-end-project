@@ -5,12 +5,12 @@ namespace app\models;
 use Yii;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
-use app\models\ProvinceTh;
+use app\models\Province;
 
 /**
- * ProvinceThSearch represents the model behind the search form about `app\models\ProvinceTh`.
+ * ProvinceSearch represents the model behind the search form about `app\models\Province`.
  */
-class ProvinceThSearch extends ProvinceTh
+class ProvinceSearch extends Province
 {
     /**
      * @inheritdoc
@@ -41,7 +41,7 @@ class ProvinceThSearch extends ProvinceTh
      */
     public function search($params)
     {
-        $query = ProvinceTh::find();
+        $query = Province::find();
 
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
